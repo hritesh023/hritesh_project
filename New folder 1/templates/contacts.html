@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Contacts - Hritesh Kumar Patro{% endblock %}
+
+{% block content %}
+
+<section style="max-width: 600px; margin: 2rem auto; text-align: center; font-family: Arial, sans-serif;">
+    <h1>Contact Me</h1>
+    <p>If you'd like to get in touch, feel free to reach out through any of the following:</p>
+
+    <ul style="list-style: none; padding: 0; font-size: 1.1rem; text-align: left;">
+    <li><strong>Email:</strong> <a href="https://hriteshkumarpatro@gmail.com">hriteshkumarpatro@gmail.com</a></li>
+    <li><strong>Phone:</strong> <a href="tel:+919439964150">+91 94399 64150</a></li>
+    <li><strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/hritesh-kumar-patro-7aa80a359" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/hritesh-kumar-patro-7aa80a359
+        </a>
+    </li>
+    <li><strong>GitHub:</strong> 
+        <a href="https://github.com/hritesh023" target="_blank" rel="noopener noreferrer">
+            github.com/hritesh023
+        </a>
+    </li>
+</ul>
+
+    <form method="post" action="/contacts" style="margin-top: 2rem; text-align: left;">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required 
+               style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;" /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required 
+               style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;" /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required 
+                  style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;"></textarea><br />
+
+        <button type="submit" 
+                style="background-color: #fa0505; color: white; padding: 0.7rem 1.5rem; border: none; border-radius: 4px; cursor: pointer;">
+            Send Message
+        </button>
+    </form>
+</section>
+<style>
+ul a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+ul a:hover {
+  color: rgb(255, 0, 85);
+  text-decoration: underline;
+}
+</style>
+{% endblock %}
