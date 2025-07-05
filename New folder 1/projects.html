@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Projects - Hritesh Kumar Patro{% endblock %}
+
+{% block content %}
+<section style="max-width: 800px; margin: 3rem auto; font-family: Arial, sans-serif; color: #faf7f7;">
+    <h1>My Projects</h1>
+    <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+        Here are some of the projects I have worked on, demonstrating my skills in web development using Flask, HTML, CSS, and more.
+    </p>
+
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+        <article style="border: 1px solid #f8f7f7; border-radius: 6px; padding: 1rem; box-shadow: 0 2px 5px rgb(248, 246, 246);">
+            <h2>Task Manager Web App</h2>
+            <p>
+                A Flask-based web application that helps users manage their daily tasks with an intuitive interface and responsive design.
+            </p>
+            <p><strong>Technologies:</strong> Flask, Jinja2, SQLite, CSS</p>
+            <a href="https://github.com/hritesh023" target="_blank" rel="noopener noreferrer"
+               style="color: #f5f7f8; font-weight: bold; text-decoration: underline;">
+                View on GitHub
+            </a>
+        </article>
+        <article style="border: 1px solid #f7f5f5; border-radius: 6px; padding: 1rem; box-shadow: 0 2px 5px rgb(252, 251, 251);">
+            <h2>Portfolio Website</h2>
+            <p>
+                My personal portfolio website showcasing my skills, projects, and contact information, built with Flask and styled using CSS.
+            </p>
+            <p><strong>Technologies:</strong> Flask, HTML, CSS, Jinja2</p>
+            <a href="https://github.com/hritesh023" target="_blank" rel="noopener noreferrer"
+               style="color: #fbfcfd; font-weight: bold; text-decoration: underline;">
+                View on GitHub
+            </a>
+        </article>
+        <article style="border: 1px solid #faf9f9; border-radius: 6px; padding: 1rem; box-shadow: 0 2px 5px rgb(253, 252, 252);">
+            <h2>Blog Platform</h2>
+            <p>
+                A simple blog platform where users can create, edit, and delete posts. Focused on backend functionality and clean UI.
+            </p>
+            <p><strong>Technologies:</strong> Flask, SQLite, Bootstrap</p>
+            <a href="https://github.com/hritesh023" target="_blank" rel="noopener noreferrer"
+               style="color: #f7f8fa; font-weight: bold; text-decoration: underline;">
+                View on GitHub
+            </a>
+        </article>
+    </div>
+</section>
+{% endblock %}

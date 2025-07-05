@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Hritesh Kumar Patro{% endblock %}
+
+{% block content %}
+<section style="max-width: 800px; margin: 3rem auto; font-family: Arial, sans-serif; text-align: center;">
+    <h1>Welcome to My Portfolio</h1>
+  <img src="{{ url_for('static', filename='hritesh.jpg') }}" alt="Home Image" style="max-width: 12%; height: auto;">
+    <p style="font-size: 1.2rem; margin-top: 1rem; color: #f3eded;">
+        Hi, I’m <strong>Hritesh Kumar Patro</strong> — a passionate developer and tech enthusiast.
+        Explore my projects, learn about my skills, or get in touch!
+    </p>
+    <div style="margin-top: 2rem;">
+        <a href="/about" 
+           style="display: inline-block; margin: 0 1rem; padding: 0.8rem 1.5rem; background-color: #0af70a; color: rgb(7, 1, 1); text-decoration: none; border-radius: 5px; font-weight: bold;">
+            About Me
+        </a>
+        <a href="/projects" 
+           style="display: inline-block; margin: 0 1rem; padding: 0.8rem 1.5rem; background-color: #082bf3; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+            Projects
+        </a>
+        <a href="/contacts" 
+           style="display: inline-block; margin: 0 1rem; padding: 0.8rem 1.5rem; background-color: #f30f48; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+            Contact
+        </a>
+    </div>
+
+    <section style="margin-top: 3rem; text-align: left;">
+        <h2>Featured Project</h2>
+        <p style="font-size: 1rem; color: #f8f7f7;">
+            Check out my latest project on GitHub — a web app that helps users manage tasks efficiently with a clean and intuitive interface.
+        </p>
+        <a href="https://github.com/hritesh023" target="_blank" rel="noopener noreferrer"
+           style="color: #f7f8f8; font-weight: bold; text-decoration: underline;">
+            View on GitHub
+        </a>
+    </section>
+
+</section>
+{% endblock %}
